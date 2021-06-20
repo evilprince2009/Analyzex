@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analyzex - Know your password strength</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="password">
+      <input type="text" placeholder="PASSWORD" />
+    </div>
+    <div class="parameter">
+      <ul class="first-group">
+        <li>
+          <input type="checkbox" name="uppercase" id="uppercase" />
+          <label for="uppercase">Uppercase</label>
+        </li>
+        <li>
+          <input type="checkbox" name="lowercase" id="lowercase" />
+          <label for="lowercase">Lowercase</label>
+        </li>
+      </ul>
+      <ul class="second-group">
+        <li>
+          <input type="checkbox" name="minimum" id="minimum" />
+          <label for="minimum">Minimum 8 chars</label>
+        </li>
+        <li>
+          <input type="checkbox" name="numchar" id="numchar" />
+          <label for="numchar">Numbers & special chars</label>
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p>
+        Coded with
+        <span style="font-weight: 400; font-size: 15px; color: #f5084f">
+          &hearts;
+        </span>
+        by
+        <a target="_blank" href="https://web.facebook.com/evilprince2009/"
+          >@evilprince2009</a
+        >
+      </p>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
