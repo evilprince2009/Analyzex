@@ -36,6 +36,7 @@ body {
 .parameter {
   display: flex;
   justify-content: center;
+  margin-bottom: 22%;
 }
 
 .first-group {
@@ -47,11 +48,12 @@ body {
 .footer {
   font-family: "Roboto Condensed";
   text-align: center;
-  margin-top: 22%;
+
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   color: #fff;
   text-transform: lowercase;
+  float: none;
 }
 .footer a {
   text-decoration: none;
