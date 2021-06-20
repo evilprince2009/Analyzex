@@ -41,19 +41,19 @@ container.addEventListener("keyup", (e: KeyboardEvent) => {
     uppercase_box.checked = false;
   } else {
     uppercase_box.checked = true;
-    upper_label.classList.add("success");
+    //upper_label.classList.add("success");
   }
 
   if (!checkLower(passwordString)) {
     lowercase_box.checked = false;
   } else {
     lowercase_box.checked = true;
-    lower_label.classList.add("success");
+    //lower_label.classList.add("success");
   }
 
   if (passwordString.length >= 8) {
     minimum_box.checked = true;
-    minimum_label.classList.add("success");
+    //minimum_label.classList.add("success");
   } else {
     minimum_box.checked = false;
   }
