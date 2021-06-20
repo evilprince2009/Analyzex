@@ -3,6 +3,9 @@ body {
   background: #011627;
 }
 
+.success {
+  color: rgb(124, 248, 8);
+}
 .password {
   margin-top: 17%;
   display: flex;
@@ -12,14 +15,15 @@ body {
 .password input {
   font-family: "Roboto Condensed";
   text-align: center;
-  font-size: 20;
+  font-size: 22;
   font-weight: 600;
   letter-spacing: 0.2em;
   line-height: 1.2em;
   width: 325px;
   height: 30px;
   color: #011627;
-  border-radius: 20px;
+  border-radius: 10px;
+  border: 1px solid #01121f;
 }
 
 .first-group,
@@ -53,7 +57,6 @@ body {
   font-size: 15px;
   color: #fff;
   text-transform: lowercase;
-  float: none;
 }
 .footer a {
   text-decoration: none;
