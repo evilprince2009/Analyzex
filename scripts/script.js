@@ -10,17 +10,7 @@ const lowercase_box = document.querySelector("#lowercase");
 const uppercase_box = document.querySelector("#uppercase");
 window.addEventListener("DOMContentLoaded", () => {
     passwordInput.focus();
-    upper_label.classList.remove("success");
-    lower_label.classList.remove("success");
-    minimum_label.classList.remove("success");
 });
-if (passwordInput.value === "" ||
-    !passwordInput.value ||
-    passwordInput.value == null) {
-    upper_label.classList.remove("success");
-    lower_label.classList.remove("success");
-    minimum_label.classList.remove("success");
-}
 container.addEventListener("keyup", (e) => {
     e.preventDefault();
     const eventTarget = e.target;

@@ -28,20 +28,10 @@ const uppercase_box: HTMLInputElement = document.querySelector(
 
 window.addEventListener("DOMContentLoaded", () => {
   passwordInput.focus();
-  upper_label.classList.remove("success");
-  lower_label.classList.remove("success");
-  minimum_label.classList.remove("success");
+  // upper_label.classList.remove("success");
+  // lower_label.classList.remove("success");
+  // minimum_label.classList.remove("success");
 });
-
-if (
-  passwordInput.value === "" ||
-  !passwordInput.value ||
-  passwordInput.value == null
-) {
-  upper_label.classList.remove("success");
-  lower_label.classList.remove("success");
-  minimum_label.classList.remove("success");
-}
 
 container.addEventListener("keyup", (e: KeyboardEvent) => {
   e.preventDefault();
