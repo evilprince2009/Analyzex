@@ -1,10 +1,7 @@
 "use strict";
 const container = document.querySelector("body");
 const passwordInput = document.querySelector(".password input");
-const upper_label = document.querySelector("#upper-label");
-const lower_label = document.querySelector("#lower-label");
-const minimum_label = document.querySelector("#minimum-label");
-const numchar_label = document.querySelector("#numchar-label");
+const numchar_box = document.querySelector("#numchar");
 const minimum_box = document.querySelector("#minimum");
 const lowercase_box = document.querySelector("#lowercase");
 const uppercase_box = document.querySelector("#uppercase");
@@ -20,21 +17,24 @@ container.addEventListener("keyup", (e) => {
     }
     else {
         uppercase_box.checked = true;
-        upper_label.classList.add("success");
     }
     if (!checkLower(passwordString)) {
         lowercase_box.checked = false;
     }
     else {
         lowercase_box.checked = true;
-        lower_label.classList.add("success");
     }
     if (passwordString.length >= 8) {
         minimum_box.checked = true;
-        minimum_label.classList.add("success");
     }
     else {
         minimum_box.checked = false;
+    }
+    if (!checkNumber(passwordString)) {
+        numchar_box.checked = false;
+    }
+    else {
+        numchar_box.checked = true;
     }
 });
 const checkCapital = (input) => {
@@ -50,6 +50,15 @@ const checkLower = (input) => {
     var _a;
     for (let i = 0; i < input.length; i++) {
         if (input[i] === ((_a = input[i]) === null || _a === void 0 ? void 0 : _a.toLowerCase())) {
+            return true;
+        }
+    }
+    return false;
+};
+const checkNumber = (input) => {
+    const format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+    for (let i = 0; i < input.length; i++) {
+        if (format.test(input.charAt(i))) {
             return true;
         }
     }
