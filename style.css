@@ -3,9 +3,9 @@ body {
   background: #011627;
 }
 
-.success {
+/* .success {
   color: rgb(124, 248, 8);
-}
+} */
 .password {
   margin-top: 17%;
   display: flex;
@@ -61,7 +61,4 @@ body {
 .footer a {
   text-decoration: none;
   color: #e7084b;
-}
-.wipe {
-  color: #fff;
 }
